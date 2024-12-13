@@ -1,0 +1,7 @@
+ascronization
+memory heap 
+call stack
+call back
+web API
+call stack
+call back = pass to another function

@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Hedvig Letters Serif', serif;
+}
+header{
+    background-color:rgba(22, 22, 23, .8);
+   display: flex;
+   justify-content: space-between;
+  padding: 0 auto;
+  align-items: center;
+padding-top: 10px;
+padding-bottom: 10px;
+position: fixed;
+width: 100%;
+   
+}
+.logo{
+    width: 50px;
+    padding-left: 100px;
+    
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin-right: 80px;
+
+  
+  
+}
+.nav-bar li{
+    list-style: none;
+    justify-content: space-between;
+    
+   
+}
+.nav-bar li a{
+    text-decoration: none;
+    font-size: 21px;
+    color: #06c;
+    opacity: 1;
+ 
+}
+.nav-bar li a:hover{
+    color:rgb(188, 204, 220);
+    
+}
+.wraper1{
+    
+   display: flex;
+}
+.image-1{
+    background-image: url('../image/photo-1466695108335-44674aa2058b.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.image-2{
+    background-image: url('../image/full-shot-woman-online-fashion-shopping_23-2150460081.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    padding-right: 20px;
+}
+.writer{
+    font-size: 36px;
+}
+.trade-in {
+    display:block;
+    text-align: center;
+    /* background-color: #fafafa; */
+}
+.trade-in p{
+    font-size: 21px;
+
+    padding-bottom: 4px;
+    padding-top: 10px;
+
+}
+.trade-in h2{
+    color: #06c;
+    font-size: 40px;
+    font-weight: 600;
+}
+.trade-in h3{
+    color: rgb(45, 103, 71);
+    font-size: 40px;
+    font-weight: 600;
+}
+.btn1{
+    background-color: #088178;
+    color: #fff;
+    width: 150px;
+    height: 60px;
+    border-radius: 10px 10px 10px;
+    border-style: none;
+    margin-top: 30px;
+}
+#sectionimage{
+    display: flex;
+    flex-wrap: wrap;
+  width: 1100px;
+       margin: 10px auto;
+    justify-content: space-between;
+}
+/* #sectionimage img{
+width: 100px;
+
+} */
+
+.image-3, .image-4, .image-5,.image-6, .image-7, .image-8{
+    border: 1px #06c solid;
+    padding: 30px;
+    text-align: center;
+   margin: 20px auto ;
+   background-color: #088178;
+   border: none;
+
+}
+.image-3:hover, .image-4:hover, .image-5:hover, .image-6:hover,.image-7:hover, .image-8:hover{
+    background-color: #06c;
+}
+.section21{
+    font-size: 36px;
+    text-align: center;
+    margin: 60px auto;
+}
+.section21 p{
+    font-size: 21px;
+}
+.phone-section{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 980px;
+    margin-left: 80px;
+}
+.sumsung-galaxy{
+    border: none;
+}
+.phone-section img{
+    width: 300px;
+}
+.phone-section div{
+    width: 300px;
+    margin-right: 40px;
+    background-color:#088178
+    
+}
+.phone-section div:hover{
+    background-color: #088178;
+    
+}
+div .btn2{
+    background-color: #088178;
+    width: 150px;
+    height: 50px;
+    border-radius:10px 10px 10px;
+    border: none;
+   
+}
+.gap{
+    margin-top: 60px;
+}
+
+
+
+

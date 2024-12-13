@@ -1,0 +1,83 @@
+/*Question 1
+ Define a simple function named myFirst that prints the word "Hello" on the console   First define the function
+  Then call the function
+  understand the problem 
+  2. write using paper 
+  3 GENERAL FORMULA 
+  IF NUMBER FALSE 
+  ELSE 
+  FOR LOOP A.LENGTH 
+  SMALL LETER OUT 
+  append 
+  finally return 
+
+  4 C CODE
+
+
+
+"VBDBVNVFNaMNFyDHKJnRFLaDKlMMMm"
+// understand the problem 
+//  write on paper aynalm
+// write general formula 
+// captal letter break  if small letter small letter output generate 
+// write using c CODE
+ // define afunction 
+ //   foor loop define 
+ // check the element is letter or another thing 
+ // if the letter is small generate or display small letter;
+ // append on the variable declaration 
+ // save on the result 
+ // return the result ;
+// if we have  two arrays 
+// the minimum of the first  array is greater than the minimum of the second array
+// the max first  array is lessthan the maximum of the  second array
+// nested  or not 
+//[,6,6,5,4,] [3,4,5,6,8]
+// understand the problem
+// write on your paper
+//write general formula of the nested array
+//the minmum of the  the minimum of the first  array is greater than the minimum of the second array and the max first  array is lessthan the maximum of the  second array generated  array nested 
+
+// write using c code 
+// define the function
+//declare any varible to use nested array
+//check the element is array or not 
+//sort every element of the array
+//  if first elemnt of the first array greater than the first element of the second array  and if the last elemnt of the first array lessthan the last elemnt of the second array  generate or display the array is nested;
+//return the array  is nested
+// else this is not true input 
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

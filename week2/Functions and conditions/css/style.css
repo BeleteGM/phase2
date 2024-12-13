@@ -1,0 +1,36 @@
+#two {
+  background-color: aqua;
+  width: 100%;
+  height: 80px;
+  color: blue;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 40px;
+}
+#three {
+  background-color: rgb(9, 255, 0);
+  width: 100%;
+  height: 80px;
+  color: rgb(20, 21, 20);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 40px;
+}
+.blue {
+  background: #06c;
+}
+.red {
+  background: red;
+}
+.pink {
+  background-color: black;
+  color: blue;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 40px;
+}

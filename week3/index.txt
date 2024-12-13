@@ -1,0 +1,163 @@
+login as: admin
+Keyboard-interactive authentication prompts from server:
+| Password:
+End of keyboard-interactive prompts from server
+
+IE-BR-Router-1#ena
+IE-BR-Router-1#conf
+IE-BR-Router-1#configure t
+IE-BR-Router-1#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+IE-BR-Router-1(config)#ex
+IE-BR-Router-1(config)#ex
+% Ambiguous command:  "ex"
+IE-BR-Router-1(config)#sh
+IE-BR-Router-1(config)#do sh
+IE-BR-Router-1(config)#do show conf
+IE-BR-Router-1(config)#do show configuration
+Using 2359 out of 262136 bytes
+!
+! Last configuration change at 05:13:02 UTC Mon Nov 6 2023 by admin
+!
+version 15.4
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname IE-BR-Router-1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+no aaa new-model
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip domain name ienetworks.co
+ip cef
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+cts logging verbose
+!
+!
+license udi pid CISCO1941/K9 sn FGL21072191
+license boot module c1900 technology-package securityk9
+!
+!
+username admin privilege 15 password 7 022F217B59565D72
+!
+redundancy
+!
+!
+!
+!
+!
+ip ssh version 2
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+interface Embedded-Service-Engine0/0
+ no ip address
+ shutdown
+!
+interface GigabitEthernet0/0
+ description Outside-Interface
+ ip address 196.188.234.241 255.255.255.224 secondary
+ ip address 10.130.71.186 255.255.255.252
+ ip nat outside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/1
+ description Inside-Interface
+ ip address 192.168.1.1 255.255.255.0
+ ip nat inside
+ ip virtual-reassembly in
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0/0
+ ip address 10.130.217.156 255.255.255.248
+ ip policy route-map MPLS-VPN
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0/1
+ no ip address
+ shutdown
+ duplex auto
+ speed auto
+!
+router ospf 10
+ network 192.168.0.0 0.0.255.255 area 0
+ default-information originate
+!
+router ospf 1
+!
+ip forward-protocol nd
+!
+no ip http server
+no ip http secure-server
+!
+ip nat inside source list 1 interface GigabitEthernet0/0 overload
+ip route 0.0.0.0 0.0.0.0 10.130.71.185
+ip route 10.130.177.184 255.255.255.248 10.130.217.153
+ip route 172.16.0.0 255.255.0.0 10.130.217.153
+ip route 172.25.0.0 255.255.0.0 10.130.217.153
+!
+ip access-list extended MPLS-VPN
+ permit ip 192.168.0.0 0.0.255.255 172.16.0.0 0.0.255.255
+ permit ip 192.168.0.0 0.0.255.255 172.25.0.0 0.0.255.255
+ permit ip 192.168.0.0 0.0.255.255 any
+ip access-list extended VPN
+!
+!
+route-map MPLS-VPN permit 10
+ match ip address MPLS-VPN
+ set ip next-hop 10.130.217.153
+!
+!
+access-list 1 permit 192.168.0.0 0.0.255.255
+!
+control-plane
+!
+!
+!
+line con 0
+line aux 0
+line 2
+ no activation-character
+ no exec
+ transport preferred none
+ transport output pad telnet rlogin lapb-ta mop udptn v120 ssh
+ stopbits 1
+line vty 0 4
+ login local
+ transport input ssh
+!
+scheduler allocate 20000 1000
+!
+end
